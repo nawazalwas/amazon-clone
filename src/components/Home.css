@@ -1,0 +1,25 @@
+.home{
+
+}
+
+.home_banner{
+    width: 100%;
+    mask-image: linear-gradient(to bottom,rgba(0,0,0,1),rgba(0,0,0,0));
+    max-width: 1500px;
+    margin: 0 auto;
+    z-index: -1;
+    margin-bottom: -150px;
+
+}
+
+.home_row{
+    display: flex;
+    z-index: 1;
+    margin: 0 5px;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.home_row > div {
+    max-width: 300px;
+}
