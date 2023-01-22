@@ -6,12 +6,6 @@ import { createRoot } from 'react-dom/client';
 
 
 
-/* ReactDOM.render(
-    <AmazonProvider initialState={initialState} reducer={reducer} >
-        <App />
-    </AmazonProvider>
-
-    , document.getElementById("root")); */
 
 
 const container = document.getElementById('root');
