@@ -45,6 +45,12 @@ const App = () => {
 
   }, []);
 
+  useEffect(() => {
+    const state = localStorage.getItem("state");
+    state && dispatch({ type: 'LOCAL_STORAGE', state: { ...JSON.parse(state), user: user } });
+    console.log(state);
+  }, [])
+
 
   console.log(user);
 

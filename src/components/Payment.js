@@ -29,7 +29,7 @@ function Payment() {
             const response = await axios({
                 method: 'post',
                 // Stripe expects the total in a currencies subunits
-                url: `http://127.0.0.1:5001/clone-196e9/us-central1/api/payments/create?total=${getBasketTotal(cart) * 100}`
+                url: `https://us-central1-clone-196e9.cloudfunctions.net/api/payments/create?total=${getBasketTotal(cart) * 100}`
             });
             setClientSecret(response.data.clientSecret)
         }

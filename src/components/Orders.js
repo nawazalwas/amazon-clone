@@ -9,7 +9,10 @@ function Orders() {
     const [{ cart, user }, dispatch] = AmazonUseContext();
     const [orders, setOrders] = useState({});
 
+
     useEffect(() => {
+        
+        
         if (user) {
             const getDbHandler = async () => {
                 const users = collection(db, 'users');

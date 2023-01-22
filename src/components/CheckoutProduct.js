@@ -1,11 +1,13 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import './CheckoutProduct.css';
 import Image from './Image';
 import { AmazonUseContext } from './StateProvider';
 import Title from './Title';
 
 function CheckoutProduct({ id, title, price, rating, image, quantity, hideButton }) {
-    const [state, dispatch] = AmazonUseContext();
+    const [{user}, dispatch] = AmazonUseContext();
+    
+    
     const removeFromCart = () => {
         dispatch({
             type: 'REMOVE_FROM_CART',
